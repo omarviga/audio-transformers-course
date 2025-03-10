@@ -1,10 +1,11 @@
 import argparse
 import os
-import yaml
-
 from pathlib import Path
 
+import yaml
+
 PATH_TO_COURSE = Path("chapters/")
+
 
 def load_sections(language: str):
     toc = yaml.safe_load(
